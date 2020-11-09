@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    informe quantidade de elefante:<input id="elefante"> <br>
+    <button onclick="atazanar()">atazanar a médium</button> <br>
+    <span id="span_elefantes"></span>
+</body>
+
+</html>
+<script>
+    function atazanar() {
+        var ele = Number(elefante.value);
+        for(var contador = 1; contador <= ele; contador ++) {
+            span_elefantes.innerHTML += ` 1 elefante incomoda muita gente! <br>`;
+            var vezes = contador + 1;
+
+            span_elefantes.innerHTML += `${vezes} elefantes `;
+
+            for(var contador_interno = 0; contador_interno < vezes; contador_interno++){
+                span_elefantes.innerHTML += `incomodam, `;
+            }
+            span_elefantes.innerHTML += ` muito mais! <br><br>`;
+        }
+    }
+</script>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="verNumeros()">curto 3 e 5</button> <br>
+    <div id="div_numero"></div>
+</body>
+</html>
+<script>
+    function verNumeros() {
+        for (var contador = 0; contador <= 100; contador ++) 
+            if (contador % 5 == 0 && contador % 3 == 0) {
+                div_numero.innerHTML += `É tri! É penta! <br>`;
+            }else if (contador % 5 == 0)  {
+                div_numero.innerHTML += 'É PENTA! <br>';
+            }else if (contador % 3 ==0)  {
+                div_numero.innerHTML += 'É TRI! <br>';
+            }else {
+                div_numero.innerHTML += `${contador}<br>`;
+            }
+    }
+</script>
